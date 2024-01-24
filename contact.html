@@ -20,7 +20,24 @@
         body {
             font-family: 'Roboto', sans-serif;
         }
-
+.title-icon {
+  background-image: url('./img/banner_img.jpeg');
+  background-position: 0 0;
+  width: 16px;
+  height: 16px;
+}
+        #title {
+  position: relative;
+}
+#title:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-position: -16px 0;
+}
         .card {
             transition: all 0.2s ease;
             cursor: pointer;
