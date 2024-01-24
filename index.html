@@ -23,7 +23,24 @@
         body {
             font-family: 'Roboto', sans-serif;
         }
-
+.title-icon {
+  background-image: url('sprite.png');
+  background-position: 0 0;
+  width: 16px;
+  height: 16px;
+}
+        #title {
+  position: relative;
+}
+#title:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-position: -16px 0;
+}
         .typewriter {
             overflow: hidden;
             /* Ensures the content is not revealed until the animation */
